@@ -1,7 +1,21 @@
 # 🚀 Flowspace – Project Management Dashboard
 
 A production-grade React application featuring:
+- Built a full-stack-style React dashboard with Kanban board,
+  drag & drop task management, and multi-chart analytics
 
+- Implemented global state management using useReducer and
+  Context API — without Redux — across 6+ components
+
+- Designed a fully responsive dark/light themed UI with CSS
+  variables, custom animations, and a collapsible sidebar
+
+- Integrated Recharts to visualize project data using Area,
+  Bar, Pie, Line, and Radar charts with theme-aware tooltips
+
+- Features include CRUD modals, real-time task filtering,
+  notification system, and a settings panel with 4 tabs
+**##Project Overview**
 - **Kanban Board** with drag-and-drop (hello-pangea/dnd)
 - **Dashboard** with real-time stats and charts (Recharts)
 - **Analytics** with Area, Bar, Pie, Line, and Radar charts
@@ -12,7 +26,7 @@ A production-grade React application featuring:
 - **Notifications** system
 - Fully responsive design
 
-## Tech Stack
+## Tech Stack 
 
 | Tool | Purpose |
 |------|---------|
