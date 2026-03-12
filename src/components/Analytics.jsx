@@ -4,8 +4,6 @@ import { useApp } from '../context/AppContext';
 import { format, parseISO } from 'date-fns';
 import { ChartTooltip } from './ChartTooltip';
 
-const COLORS = ['#6366f1', '#f59e0b', '#10b981', '#ec4899', '#3b82f6'];
-
 export default function Analytics() {
   const { state } = useApp();
 

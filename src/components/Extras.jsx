@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bell, CheckCircle, Info, AlertTriangle, Trash2, Plus, ExternalLink, Users, Calendar, BarChart2 } from 'lucide-react';
+import { Bell, CheckCircle, Info, AlertTriangle, Trash2, Plus, ExternalLink, Calendar, BarChart2 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { formatDate, getAvatarColor, getInitials } from '../utils/helpers';
 
@@ -58,7 +58,6 @@ export function ProjectsList({ setActiveView }) {
         {state.projects.map(project => {
           const tasks = state.tasks.filter(t => t.projectId === project.id);
           const done = tasks.filter(t => t.status === 'done').length;
-          const inProg = tasks.filter(t => t.status === 'in-progress').length;
           return (
             <div key={project.id} className="project-card" style={{ '--accent': project.color }}>
               <div className="pc-accent-bar" style={{ background: project.color }} />

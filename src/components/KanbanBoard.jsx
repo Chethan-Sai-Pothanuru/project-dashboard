@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
-import { Plus, Clock, AlertCircle, Filter, Search, MoreHorizontal, Tag } from 'lucide-react';
+import { Plus, Clock, AlertCircle, Filter, Search } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { filterTasks, formatDate, isOverdue, getPriorityColor, getAvatarColor, getInitials } from '../utils/helpers';
 
@@ -80,8 +80,6 @@ export default function KanbanBoard() {
     dispatch({ type: 'MOVE_TASK', payload: { taskId: draggableId, newStatus } });
     addNotification(`Task moved to "${COLUMNS.find(c => c.id === newStatus)?.label}"`, 'info');
   };
-
-  const assignees = useMemo(() => [...new Set(state.tasks.map(t => t.assignee).filter(Boolean))], [state.tasks]);
 
   return (
     <div className="kanban-page">

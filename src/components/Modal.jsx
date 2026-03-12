@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Trash2, Calendar, User, Tag, AlertCircle, CheckCircle2 } from 'lucide-react';
+import { X, Trash2, Calendar, User, AlertCircle } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { formatDate, isOverdue, getPriorityColor, getAvatarColor, getInitials } from '../utils/helpers';
 
